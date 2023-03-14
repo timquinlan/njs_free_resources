@@ -13,8 +13,8 @@ The quickest way to get up an environment with NJS is to use the official nginx 
 
 Edit /etc/nginx/nginx.conf and add the following line in the main context:
 
-load_module /usr/lib/nginx/modules/ngx_http_js_module.so;
+    load_module /usr/lib/nginx/modules/ngx_http_js_module.so;
     
 Reload nginx and away you go:
 
-nginx -s reload
+    nginx -s reload
