@@ -7,11 +7,14 @@ Here is a list of some very handy resources to learn NJS
  - The NJS [cli](http://nginx.org/en/docs/njs/cli.html) is very handy for debugging.
 
 The quickest way to get up an environment with NJS is to use the official nginx container:
+
     docker run -p 80:80 nginx:latest
     docker exec -it [container_id] bash
 
 Edit /etc/nginx/nginx.conf and add the following line in the main context:
-    load_module /usr/lib/nginx/modules/ngx_http_js_module.so;
+
+load_module /usr/lib/nginx/modules/ngx_http_js_module.so;
     
 Reload nginx and away you go:
-    nginx -s reload
+
+nginx -s reload
